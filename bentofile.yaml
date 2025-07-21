@@ -1,0 +1,14 @@
+service: "src.service:svc"
+labels:
+  owner: ASSOULINE
+  project: admission_prediction
+include:
+  - src/
+  - data/processed/
+python:
+  packages:
+    - scikit-learn
+    - pandas
+    - numpy
+    - bentoml
+    - pydantic
